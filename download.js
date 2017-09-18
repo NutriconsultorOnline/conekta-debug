@@ -4,7 +4,7 @@ var get         = require('got');
 var resolve     = require('path').resolve;
 var writeStream = require('fs').createWriteStream;
 
-var src = 'https://js.stripe.com/v2/stripe-debug.js';
-var dest = resolve(__dirname, 'stripe-debug.js');
+var src = 'https://cdn.conekta.io/js/latest/conekta.js';
+var dest = resolve(__dirname, 'conekta.js');
 
-get(src).pipe(writeStream(dest));
+get.stream(src).pipe(writeStream(dest));

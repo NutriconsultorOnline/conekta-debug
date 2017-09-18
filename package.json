@@ -1,28 +1,28 @@
 {
-  "name": "stripe-debug",
-  "version": "2.0.0",
-  "description": "npm install for Stripe.js — for testing only",
-  "main": "stripe-debug.js",
+  "name": "conekta-debug",
+  "version": "1.0.0",
+  "description": "Conekta.js — for testing only",
+  "main": "conekta.js",
   "scripts": {
-    "install": "node download.js",
-    "test": "npm run install && if [ ! -f 'stripe-debug.js' ]; then exit 1; fi"
+    "postinstall": "node download.js",
+    "test": "node download.js && if [ ! -f 'conekta.js' ]; then exit 1; fi"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bendrucker/stripe-debug.git"
+    "url": "https://github.com/NutriconsultorOnline/conekta-debug.git"
   },
   "keywords": [
-    "stripe",
+    "conekta",
     "debug",
     "development"
   ],
-  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
+  "author": "Nutriconsultor Online S.A. de C.V.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bendrucker/stripe-debug/issues"
+    "url": "https://github.com/NutriconsultorOnline/conekta-debug/issues"
   },
-  "homepage": "https://github.com/bendrucker/stripe-debug",
+  "homepage": "https://github.com/NutriconsultorOnline/conekta-debug",
   "dependencies": {
-    "got": "~2.7.2"
+    "got": "^7.1.0"
   }
 }

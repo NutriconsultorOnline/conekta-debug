@@ -27,4 +27,4 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-stripe-debug.js
+conekta.js
