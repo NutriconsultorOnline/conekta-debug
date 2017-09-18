@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/NutriconsultorOnline/conekta-debug.svg?branch=master)](https://travis-ci.org/NutriconsultorOnline/conekta-debug) [![dependencies Status](https://david-dm.org/NutriconsultorOnline/conekta-debug/status.svg)](https://david-dm.org/NutriconsultorOnline/conekta-debug)
 
 # conekta-debug
-`npm install` for Ctripe.js — for testing only. Downloads `conekta.js` from the Conekta CDN. 
+Conekta.js — for testing only. Downloads `conekta.js` from the Conekta CDN. 
 
 ## Installing
 ```sh
