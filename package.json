@@ -1,11 +1,12 @@
 {
   "name": "conekta-debug",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Conekta.js — for testing only",
   "main": "conekta.js",
   "scripts": {
     "postinstall": "node download.js",
-    "test": "node download.js && if [ ! -f 'conekta.js' ]; then exit 1; fi"
+    "test": "node download.js && if [ ! -f 'conekta.js' ]; then exit 1; fi",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,21 @@
   "homepage": "https://github.com/NutriconsultorOnline/conekta-debug",
   "dependencies": {
     "got": "^7.1.0"
+  },
+  "devDependencies": {
+    "conventional-changelog-eslint": "^0.2.0",
+    "semantic-release": "^8.0.0",
+    "sr-commit-analyzer": "^2.0.3",
+    "sr-release-notes-generator": "^1.1.3"
+  },
+  "release": {
+    "analyzeCommits": {
+      "path": "sr-commit-analyzer",
+      "preset": "eslint"
+    },
+    "generateNotes": {
+      "path": "sr-release-notes-generator",
+      "preset": "eslint"
+    }
   }
 }
