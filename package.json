@@ -1,6 +1,6 @@
 {
   "name": "conekta-debug",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Conekta.js — for testing only",
   "main": "conekta.js",
   "scripts": {
